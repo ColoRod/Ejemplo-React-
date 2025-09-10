@@ -5,7 +5,7 @@ export default function TaskForm() {
   return (
     <div>
       <Input placeholder="Nueva tarea" />
-      <Button>Enviar</Button>
+      <Button>Agregar</Button>
     </div>
   )
 }

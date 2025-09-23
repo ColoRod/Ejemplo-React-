@@ -12,4 +12,3 @@ export default function TaskItem({ text, completed, onToggle, onDelete }) {
     </li>
   )
 }
-

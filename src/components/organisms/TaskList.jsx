@@ -1,4 +1,4 @@
-import TaskItem from '../molecules/Temporal'
+import TaskItem from '../molecules/TaskItem'
 
 export default function TaskList({ tasks, onToggle, onDelete }) {
   return (

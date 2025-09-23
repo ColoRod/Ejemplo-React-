@@ -1,12 +1,15 @@
 import Checkbox from '../atoms/Checkbox'
 import Button from '../atoms/Button'
 
-export default function TaskItem({ text, completed }) {
+export default function TaskItem({ text, completed, onToggle, onDelete }) {
   return (
     <li>
-      <Checkbox defaultChecked={completed} />
-      <span style={{ textDecoration: completed ? 'line-through' : 'none' }}>{text}</span>
-      <Button>🗑️</Button>
+      <Checkbox checked={completed} onChange={onToggle} />
+      <span style={{ textDecoration: completed ? 'line-through' : 'none' }}>
+        {text}
+      </span>
+      <Button onClick={onDelete}>🗑️</Button>
     </li>
   )
 }
+
